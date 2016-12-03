@@ -17,7 +17,7 @@ public class HttpUtil {
             public void run() {
                 HttpURLConnection connection = null;
                 try{
-                    URL url = new URL("http://www.baidu.com");
+                    URL url = new URL(address);
                     connection = (HttpURLConnection) url.openConnection();
                     connection.setRequestMethod("GET");
                     connection.setConnectTimeout(8000);
